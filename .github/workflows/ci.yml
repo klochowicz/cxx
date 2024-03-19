@@ -60,6 +60,10 @@ jobs:
         shell: bash
       - run: cargo run --manifest-path demo/Cargo.toml
       - run: cargo test --workspace ${{steps.testsuite.outputs.exclude}}
+<<<<<<< HEAD
+=======
+        if: matrix.rust != '1.60.0'
+>>>>>>> 9e6e673f (Fix tests to work on respective MSRVs)
       - run: cargo check --no-default-features --features alloc
         env:
           RUSTFLAGS: --cfg compile_error_if_std ${{env.RUSTFLAGS}}
