@@ -370,6 +370,10 @@ Finally, I know more about Rust library design than C++ library design so I
 would appreciate help making the C++ APIs in this project more idiomatic where
 anyone has suggestions.
 
+### Option support
+
+Support for Option<> was added https://github.com/facebookexperimental/cxx.git
+
 <br>
 
 #### License
